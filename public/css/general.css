@@ -1,0 +1,28 @@
+:root {
+  --bg-white: #fff;
+  --shadow-lg: 0 0.3rem 1.4rem rgba(0, 0, 0, 0.2);
+  --shadow-xm: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  --bg-lightGray: #f7f7f7;
+  --bg-lightGray-two: #f4f4f4;
+  --color-primary: #5ec576;
+  --color-primary-darker: #4bbb7d;
+  --color-primary-opacity: #5ec5763a;
+  --color-gray-darker: #555;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: monospace;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #444;
+  background-color: var(--bg-white);
+}
