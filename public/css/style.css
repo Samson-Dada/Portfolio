@@ -255,16 +255,9 @@
   transition: all 2s;
 }
 
-.about__title-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.9rem;
-
-  /* font-size: 1.9rem; */
-}
 .about__subtext {
   margin: 0 auto;
+  text-align: center;
   width: 10%;
   background-color: var(--color-primary);
   font-size: 1.6rem;
@@ -272,14 +265,6 @@
   letter-spacing: 0.8px;
   border-radius: 7%;
   color: white;
-}
-.about__title {
-  font-size: 2.3rem;
-  text-align: center;
-  letter-spacing: 7px;
-  text-transform: uppercase;
-  color: #fff;
-  width: 22rem;
 }
 .about__subtitle {
   color: #28b487;
@@ -764,7 +749,6 @@
 /* TABLET SCREEN*/
 @media (min-width: 768px) {
   .header__top {
-    /* justify-content: ; */
     padding: 1.2rem;
   }
 
@@ -780,6 +764,17 @@
   }
   .profile__view {
     margin-right: 5rem;
+  }
+  .about__section {
+    margin: 0 auto;
+    /* background-color: red; */
+    width: 90%;
+    /* margin-left: 3.5rem; */
+    /* margin-right: 3.5rem; */
+  }
+  .about__text {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .skill__description {
     /* font-size: 1.5rem; */
@@ -825,11 +820,6 @@
     gap: 2rem;
   }
 
-  .for__tablet-screen {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .project {
     width: 80%;
     margin: 2rem auto;
@@ -861,8 +851,13 @@
 }
 
 @media (min-width: 1024px) {
-  body {
-    font-size: 4rem;
+  .about__subtext {
+    /* padding: 0; */
+    width: 7%;
+  }
+  .about__section {
+    margin: 0 auto;
+    width: 70%;
   }
   .svg-skills {
     width: 3rem;
@@ -934,5 +929,14 @@
     margin-left: 4rem;
     grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
+  }
+
+  .operation__content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .operation__description {
+    width: 70%;
   }
 }
